@@ -24,7 +24,9 @@ async def number_handler(message: types.Message):
                     await message.answer_photo('https://media.makeameme.org/created/sorry-you-lose.jpg')
             else:
                 await message.answer("Пожалуйста, отправьте число.")
-            
+
 executor.start_polling(dp)
         
         
+
+    

@@ -7,7 +7,7 @@ dp = Dispatcher(bot)
 
 @dp.message_handler(commands="start")
 async def start(message:types.Message):
-    await message.answer("Привет студент!")
+    await message.answer(f"Привет студент!{message.from_user.firs}")
 
 @dp.message_handler(commands="help")
 async def help(message:types.Message):
